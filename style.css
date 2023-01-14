@@ -16,7 +16,11 @@ font-family: 'Poppins', sans-serif;
 }
 
 body {
-    background-color: #aaaaaa2c;
+    background-color: #aaaaaa11;
+}
+
+#hidden-web {
+    display: none;
 }
 
 /* ----------
@@ -28,7 +32,7 @@ header style
 .container-navbar {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 80%;
     margin: 87px auto 50px;
 }
@@ -95,8 +99,6 @@ header style
 }
 
 .container-img-banner {
-
-    
     background-image: url('images/Circle\ design.svg');
     background-repeat: no-repeat;
     background-size: contain;
@@ -146,6 +148,7 @@ main section
     background-color: rgb(255, 255, 255);
     padding: 17px 14px;
     border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.04);
 
 }
 
@@ -245,3 +248,65 @@ main section
   .social-link-container i {
     color: white;
   }
+
+  /*-------------------------
+   responsive design for mobile
+   =========================== */
+
+@media only screen and (max-width:662px) {
+
+    #hidden-web {
+        display: block;
+    }
+
+    #hidden-mobile {
+        display: none;
+    }
+
+    .container-navbar {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .container-banner {
+        grid-template-columns: repeat(1,1fr);
+        height: auto;
+    }
+
+    .container-banner-text {
+        order: 2;
+    }
+
+    .container-img-banner {
+        order: 1;
+        width: 100%;
+    }
+
+    .container-logo {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 20px;
+        align-items: baseline;
+    }
+
+    .img-logo {
+        width: 100%;
+    }
+
+    .img-logo-5,.img-logo-6,.img-logo-7 {
+      
+    }
+
+    .container-collection {
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .featured-product {
+        flex-direction: column-reverse;
+        row-gap: 30px;
+    }
+    .img-featured-product {
+        width: 100%;
+    }
+
+}
