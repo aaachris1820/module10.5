@@ -1,0 +1,94 @@
+/* ===========
+font import
+-------------- */
+
+
+
+/* ------------
+global styles
+================*/
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+/* ----------
+header style
+----------- */
+
+/* navbar */
+
+.container-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+/* banner style */
+
+.container-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.conatainer-banner-text {
+    flex: 1;
+}
+
+.container-img-banner {
+    flex: 1;
+    display: grid;
+    place-items: center;
+    background-image: url('images/Circle\ design.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+hr {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container-logo {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin:0 auto;
+}
+
+/* -----------
+main section 
+-------------*/
+
+.container-collection {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+
+/*------------------
+ featured product
+ ---------------  */
+
+ .featured-product {
+    display: flex;
+    align-items: center;
+ }
+
+ /*---------------
+  footer section
+  -------------- */
+
