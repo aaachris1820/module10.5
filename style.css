@@ -275,6 +275,7 @@ main section
 
     .container-banner-text {
         order: 2;
+        text-align: center;
     }
 
     .container-img-banner {
@@ -293,18 +294,23 @@ main section
         width: 100%;
     }
 
-    .img-logo-5,.img-logo-6,.img-logo-7 {
-      
+    .popular-collection {
+        width: 90%;
     }
 
     .container-collection {
         grid-template-columns: repeat(1,1fr);
+
     }
 
     .featured-product {
         flex-direction: column-reverse;
         row-gap: 30px;
     }
+.container-text-product {
+    text-align: center;
+}
+
     .img-featured-product {
         width: 100%;
     }
