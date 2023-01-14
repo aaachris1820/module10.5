@@ -2,7 +2,7 @@
 font import
 -------------- */
 
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 /* ------------
 global styles
@@ -12,6 +12,7 @@ global styles
 margin: 0;
 padding: 0;
 box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
 }
 
 /* ----------
@@ -23,13 +24,30 @@ header style
 .container-navbar {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    width: 78%;
+    margin: 87px auto 50px;
+}
+
+.title-banner {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.nav-links {
+    display: flex;
+    column-gap: 34px;
+    align-items: center;
 }
 
 .nav-links a {
     text-decoration: none;
     color: black;
     font-weight: 600;
+    font-size: 16px;
+}
+.nav-links i {
+    font-size: 18px;
 }
 
 /* banner style */
@@ -37,14 +55,20 @@ header style
 .container-banner {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    width: 80%;
+    column-gap: 120px;
+    width: 78%;
     height: 100%;
     margin: 0 auto;
 }
 
 .conatainer-banner-text {
     flex: 1;
+}
+
+.title-banner {
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 70px;
 }
 
 .container-img-banner {
